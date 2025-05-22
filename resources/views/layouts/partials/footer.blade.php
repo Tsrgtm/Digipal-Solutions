@@ -25,16 +25,25 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Services</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">SEO
-                            Optimization</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">PPC
-                            Advertising</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Web Design</a>
-                    </li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Social
-                            Media</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Email
+                    <li><a href="{{ route('services.smm') }}"
+                            class="text-gray-400 hover:text-white transition duration-300">Social Media
                             Marketing</a></li>
+                    <li><a href="{{ route('services.influencer') }}"
+                            class="text-gray-400 hover:text-white transition duration-300">Influencers'
+                            Marketing</a></li>
+                    <li><a href="{{ route('services.video') }}"
+                            class="text-gray-400 hover:text-white transition duration-300">Video
+                            Production</a>
+                    </li>
+                    <li><a href="{{ route('services.podcast') }}"
+                            class="text-gray-400 hover:text-white transition duration-300">Podcast
+                            Creation</a></li>
+                    <li><a href="{{ route('services.seo') }}"
+                            class="text-gray-400 hover:text-white transition duration-300">Search Engine
+                            Optimization</a></li>
+                    <li><a href="{{ route('services.web-dev') }}"
+                            class="text-gray-400 hover:text-white transition duration-300">Web
+                            Development</a></li>
                 </ul>
             </div>
 

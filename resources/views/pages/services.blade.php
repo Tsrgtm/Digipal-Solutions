@@ -78,20 +78,6 @@
 
                 <div class="service-card bg-white p-8 rounded-md shadow-sm">
                     <div class="feature-icon-green p-3 w-max rounded-md flex items-center justify-center mb-6">
-                        <x-heroicon-o-microphone class="text-white w-10" />
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Podcast Creation</h3>
-                    <p class="text-gray-600 mb-8">Create a podcast that resonates with your target audience, positions
-                        your brand as a thought leader and drives conversions.</p>
-                    <a href="#"
-                        class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
-                        Learn More <x-heroicon-o-arrow-right
-                            class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
-                    </a>
-                </div>
-
-                <div class="service-card bg-white p-8 rounded-md shadow-sm">
-                    <div class="feature-icon-blue p-3 w-max rounded-md flex items-center justify-center mb-6">
                         <x-heroicon-o-magnifying-glass class="text-white w-10" />
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Search Engine Optimization</h3>
@@ -105,7 +91,7 @@
                 </div>
 
                 <div class="service-card bg-white p-8 rounded-md shadow-sm">
-                    <div class="feature-icon-green p-3 w-max rounded-md flex items-center justify-center mb-6">
+                    <div class="feature-icon-blue p-3 w-max rounded-md flex items-center justify-center mb-6">
                         <x-heroicon-o-code-bracket class="text-white w-10" />
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Development</h3>

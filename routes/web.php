@@ -38,18 +38,32 @@ Route::get('/blog/show', function () {
     return view('pages.single-blog');
 })->name('blog.show');
 
-Route::get('/services', function () {
-    return view('pages.services');
-})->name('services');
+Route::group(['prefix' => 'services'], function () {
+    Route::get('/', function () {
+        return view('pages.services');
+    })->name('services');
 
-Route::get('services/web-devlopment', function () {
-    return view('pages.services.web-dev');
-})->name('services.web-dev');
+    Route::get('web-devlopment', function () {
+        return view('pages.services.web-dev');
+    })->name('services.web-dev');
 
-Route::get('services/search-engine-optimization', function () {
-    return view('pages.services.seo');
-})->name('services.seo');
+    Route::get('search-engine-optimization', function () {
+        return view('pages.services.seo');
+    })->name('services.seo');
 
-Route::get('services/social-media-marketing', function () {
-    return view('pages.services.smm');
-})->name('services.smm');
+    Route::get('social-media-marketing', function () {
+        return view('pages.services.smm');
+    })->name('services.smm');
+
+    Route::get('influencer-marketing', function () {
+        return view('pages.services.influencer');
+    })->name('services.influencer');
+
+    Route::get('video-production', function () {
+        return view('pages.services.video-production');
+    })->name('services.video');
+
+    Route::get('podcast-creation', function () {
+        return view('pages.services.podcast-creation');
+    })->name('services.podcast');
+});

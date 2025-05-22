@@ -58,3 +58,17 @@
 .feature-icon-green {
     background: linear-gradient(135deg, #10b981, #059669);
 }
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+}

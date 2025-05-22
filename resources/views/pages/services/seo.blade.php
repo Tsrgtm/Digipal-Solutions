@@ -145,38 +145,29 @@
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <section class="py-16 bg-gradient-to-r from-blue-400 to-green-400">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    SEO Results
-                    <span class="text-gradient">That Matter</span>
-                </h2>
-            </div>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="text-center p-6">
-                    <p class="text-4xl font-bold text-blue-600 mb-2">300%+</p>
-                    <p class="font-semibold">Organic Traffic Growth</p>
-                    <p class="text-sm text-gray-600">Average client increase</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-gray-100">
+                <div>
+                    <p class="text-4xl font-bold mb-2">300%+</p>
+                    <p class="text-blue-100">Organic Traffic Growth</p>
                 </div>
-                <div class="text-center p-6">
-                    <p class="text-4xl font-bold text-green-600 mb-2">85%</p>
-                    <p class="font-semibold">Keyword Ranking Improvement</p>
-                    <p class="text-sm text-gray-600">First page rankings</p>
+                <div>
+                    <p class="text-4xl font-bold mb-2">85%</p>
+                    <p class="text-blue-100">Keyword Ranking Improvement</p>
                 </div>
-                <div class="text-center p-6">
-                    <p class="text-4xl font-bold text-purple-600 mb-2">2.3x</p>
-                    <p class="font-semibold">ROI Increase</p>
-                    <p class="text-sm text-gray-600">Compared to PPC</p>
+                <div>
+                    <p class="text-4xl font-bold mb-2">2.3x</p>
+                    <p class="text-blue-100">ROI Increase</p>
                 </div>
-                <div class="text-center p-6">
-                    <p class="text-4xl font-bold text-blue-600 mb-2">24/7</p>
-                    <p class="font-semibold">Performance Monitoring</p>
-                    <p class="text-sm text-gray-600">Real-time tracking</p>
+                <div>
+                    <p class="text-4xl font-bold mb-2">24/7</p>
+                    <p class="text-blue-100">Performance Monitoring</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

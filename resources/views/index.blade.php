@@ -5,8 +5,8 @@
         style="background-image: url('{{ asset('assets/images/hero-bg.jpg') }}'); background-position: center; background-size: cover;">
         {{-- <div class="absolute inset-0 bg-gradient-to-r from-blue-500/80 to-green-500/80"></div> --}}
         <div class="absolute inset-0 bg-black opacity-70"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 place-items-center min-h-[80vh] relative">
-            <div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 place-items-center min-h-[80vh] relative">
+            <div class="text-center lg:text-left">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-100 leading-tight mb-6">Grow Your Business Digitally
                     With
                     <span class="text-gradient">
@@ -18,7 +18,7 @@
                     like yours.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-row justify-center lg:justify-start gap-4">
                     <a href="#"
                         class="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-md shadow-lg hover:scale-102 transition duration-300 font-semibold uppercase">
                         Let's Talk
@@ -28,6 +28,12 @@
                         Our Portfolio
                     </a>
                 </div>
+            </div>
+
+            <div class="hidden lg:block p-10 relative">
+                <img src="{{ asset('assets/images/home-hero.png') }}" alt="Hero Image" class="w-full h-auto">
+                <img src="{{ asset('assets/images/home-hero-2.png') }}" alt=""
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-32">
             </div>
 
 
@@ -75,7 +81,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 max-w-xl mx-auto">
                 <p class="text-gray-500 uppercase text-sm font-semibold tracking-wider mb-6">Portfolio</p>
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Our Work, Your Success</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Work, <span class="text-gradient">Your Success</span>
+                </h2>
                 <p class="text-gray-500 mx-auto text-md leading">
                     We're proud of the work we do and the impact it has on our clients. Browse through some of our most
                     recent projects
@@ -133,7 +140,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 max-w-xl mx-auto">
                 <p class="text-gray-500 uppercase text-sm font-semibold tracking-wider mb-6">Services</p>
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Our Digital Services</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Digital <span class="text-gradient">Services</span></h2>
                 <p class="text-gray-500 mx-auto text-md leading">
                     We help businesses grow online by telling their unique story and sharing their message. From SEO to
                     social media,
@@ -145,7 +152,8 @@
                 <div class="section-divider"></div>
             </div> --}}
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8" style="justify-items: center;">
+
                 <div class="service-card bg-white p-8 rounded-md shadow-sm">
                     <div class="feature-icon-blue p-3 w-max rounded-md flex items-center justify-center mb-6">
                         <x-heroicon-o-hashtag class="text-white w-10" />
@@ -153,7 +161,7 @@
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Social Media Marketing</h3>
                     <p class="text-gray-600 mb-8">Increase online presence and engagement with a tailored strategy,
                         content creation and ad management.</p>
-                    <a href="#"
+                    <a href="{{ route('services.smm') }}"
                         class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
                         Learn More <x-heroicon-o-arrow-right
                             class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
@@ -167,7 +175,7 @@
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Influencers' Marketing</h3>
                     <p class="text-gray-600 mb-8">Partner with influencers who resonate with your target audience,
                         maximize your reach and drive conversions.</p>
-                    <a href="#"
+                    <a href="{{ route('services.influencer') }}"
                         class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
                         Learn More <x-heroicon-o-arrow-right
                             class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
@@ -181,21 +189,22 @@
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Video Production</h3>
                     <p class="text-gray-600 mb-8">Create eye-catching videos that capture the essence of your brand,
                         engage your audience and drive conversions.</p>
-                    <a href="#"
+                    <a href="{{ route('services.video') }}"
                         class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
                         Learn More <x-heroicon-o-arrow-right
                             class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
                     </a>
                 </div>
 
+
                 <div class="service-card bg-white p-8 rounded-md shadow-sm">
                     <div class="feature-icon-green p-3 w-max rounded-md flex items-center justify-center mb-6">
-                        <x-heroicon-o-microphone class="text-white w-10" />
+                        <x-heroicon-o-magnifying-glass class="text-white w-10" />
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Podcast Creation</h3>
-                    <p class="text-gray-600 mb-8">Create a podcast that resonates with your target audience, positions
-                        your brand as a thought leader and drives conversions.</p>
-                    <a href="#"
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Search Engine Optimization</h3>
+                    <p class="text-gray-600 mb-8">Boost website visibility and drive traffic with a tailored SEO
+                        strategy, on-page optimization and link building.</p>
+                    <a href="{{ route('services.seo') }}"
                         class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
                         Learn More <x-heroicon-o-arrow-right
                             class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
@@ -204,26 +213,12 @@
 
                 <div class="service-card bg-white p-8 rounded-md shadow-sm">
                     <div class="feature-icon-blue p-3 w-max rounded-md flex items-center justify-center mb-6">
-                        <x-heroicon-o-magnifying-glass class="text-white w-10" />
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Search Engine Optimization</h3>
-                    <p class="text-gray-600 mb-8">Boost website visibility and drive traffic with a tailored SEO
-                        strategy, on-page optimization and link building.</p>
-                    <a href="#"
-                        class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
-                        Learn More <x-heroicon-o-arrow-right
-                            class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
-                    </a>
-                </div>
-
-                <div class="service-card bg-white p-8 rounded-md shadow-sm">
-                    <div class="feature-icon-green p-3 w-max rounded-md flex items-center justify-center mb-6">
                         <x-heroicon-o-code-bracket class="text-white w-10" />
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Development</h3>
                     <p class="text-gray-600 mb-8">Build a website that attracts and engages your audience,
                         positions your brand as a thought leader and drives conversions.</p>
-                    <a href="#"
+                    <a href="{{ route('services.web-dev') }}"
                         class="text-blue-600 font-medium group transition duration-300 flex items-center mt-auto">
                         Learn More <x-heroicon-o-arrow-right
                             class="ml-2 group-hover:translate-x-2 w-4 transition duration-300" />
@@ -325,11 +320,11 @@
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
                 <p class="text-gray-500 uppercase text-sm font-semibold tracking-wider mb-6">Testimonials</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-gradient">What our clients say</h2>
+                <h2 class="text-3xl md:text-4xl font-bold">What our <span class="text-gradient">Clients Say</span></h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="testimonial-card bg-white p-8 rounded-md shadow-sm">
